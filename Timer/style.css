@@ -1,0 +1,27 @@
+html, body {
+    background-color: #ffe5ec;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.clock {
+    width: 400px; margin: 50px auto;
+    border: 2px solid #fb6f92;
+    border-radius: 10px;
+    color: #fb6f92;
+}
+
+#btn_stop {
+    background-color: #ffc2d1;
+    border-color: white;
+    color: gray;
+}
+
+#btn_start {
+    background-color: #ffc2d1;
+    border-color: white;
+    color: gray;
+}
