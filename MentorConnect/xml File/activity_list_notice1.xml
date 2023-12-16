@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SignActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_notice2_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:background="#00ff0000"
+            android:backgroundTint="#FFFFFF"
+            android:text="◀"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  뒤로가기"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="545dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:backgroundTint="#588157"
+                android:gravity="center"
+                android:text="우리 멘토쌤 자랑 좀"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginTop="10sp"
+                app:srcCompat="@drawable/notice1" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:text="솔직히 무료로 봐주는데 이정도 해주는 거면 진짜 멘토쌤 잘 구한 거 아니냐  매번 생각하는 거지만 우리 멘토쌤 진짜 잘 구한 거 같다            자랑하려고 글 한번 올려봄 ㅎㅎ"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#a3b18a" />
+
+            <TextView
+                android:id="@+id/Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="  - 댓글 -"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/notice2ListView"
+                android:layout_width="match_parent"
+                android:layout_height="278dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editComment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="댓글을 작성해주세요."
+            android:inputType="textPersonName" />
+
+        <android.widget.Button
+            android:id="@+id/btn_notice2comment"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_weight="1"
+            android:backgroundTint="#86AF85"
+            android:text="댓글 달기" />
+    </LinearLayout>
+
+    <!-- <Button
+        android:id="@+id/btn_notice1_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" /> -->
+
+    <!-- 댓글 작성 버튼 -->
+</LinearLayout>

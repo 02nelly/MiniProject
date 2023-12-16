@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SignActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_notice2_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:background="#00ff0000"
+            android:backgroundTint="#FFFFFF"
+            android:text="◀"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  뒤로가기"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="545dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:backgroundTint="#588157"
+                android:gravity="center"
+                android:text="헬스장 등록할 때 뭐가 제일 중요해?"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginTop="10sp"
+                app:srcCompat="@drawable/notice2" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:text="다들 헬스장 등록할 때 뭐를 제일 중요하게 봐? 헬스 처음 시작하는 헬린이라 ㅜㅜ 알려주라"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#a3b18a" />
+
+            <TextView
+                android:id="@+id/Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="  - 댓글 -"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/notice2ListView"
+                android:layout_width="match_parent"
+                android:layout_height="278dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editComment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="댓글을 작성해주세요."
+            android:inputType="textPersonName" />
+
+        <android.widget.Button
+            android:id="@+id/btn_notice2comment"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_weight="1"
+            android:backgroundTint="#86AF85"
+            android:text="댓글 달기" />
+    </LinearLayout>
+
+    <!-- <Button
+        android:id="@+id/btn_notice1_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" /> -->
+
+    <!-- 댓글 작성 버튼 -->
+</LinearLayout>
